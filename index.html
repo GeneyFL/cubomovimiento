@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animación en CSS</title>
+<style>
+  /* Estilo del cuadro */
+  .cuadro {
+    width: 100px;
+    height: 100px;
+    background-color: #0ee20e;
+    position: relative;
+    animation: mover_girar 4s infinite linear; /* La animación dura 4 segundos y se repite infinitamente */
+  }
+
+  /* Definición de la animación */
+  @keyframes mover_girar {
+    0% {
+      transform: translate(0, 0) rotate(0deg); /* El cuadro comienza en su posición original sin rotación */
+    }
+    100% {
+      transform: translate(200px, 0) rotate(360deg); /* El cuadro se mueve 200px a la derecha y completa una vuelta completa */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="cuadro"></div>
+
+</body>
+</html>
